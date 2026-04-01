@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-
+    <link rel="icon" type="image/png" href="image's/neimil_black.webp" />
     <script src="https://cdn.tailwindcss.com"></script>
-
 
     <script
       type="module"
@@ -23,7 +22,21 @@
     </style>
   </head>
 
-  <body class="flex items-center justify-center min-h-screen" style="background-image: url('image\'s/hero-anim.gif'); background-position: center; background-repeat: no-repeat ; background-size: cover;">
+  <body
+    class="relative flex items-center justify-center min-h-screen overflow-hidden"
+  >
+    <!-- Background Video -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute top-0 left-0 w-full h-full object-cover -z-10"
+    >
+      <source src="video's/ezgif-8e053db62105d991.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Content -->
     <main class="w-full max-w-md px-4">
       <div
         class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-xl"
