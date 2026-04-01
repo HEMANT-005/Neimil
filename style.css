@@ -1,0 +1,95 @@
+.swiper-button-next,
+.swiper-button-prev {
+  position: static !important;
+  margin: 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  color: #1d4ed8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url("../image/hero-anim.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  position: relative;
+  width: 407px;
+  height: 455px;
+  background: transparent;
+  border-radius: 10px;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+.input-box {
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 1px solid #fff;
+}
+.input-box label {
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  transition: 0.5s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+.input-box input {
+  height: 50px;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+}
+.input-box .icon {
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.remember-forgot {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+}
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+button {
+  cursor: pointer;
+}
+.register-link {
+  margin: 25px 0 10px;
+}
+.register-link span a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 560px) {
+  .login-box {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+  }
+  .input-box {
+    width: 290px;
+  }
+}

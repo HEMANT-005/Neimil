@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <style>
+      .input-box input:focus ~ label,
+      .input-box input:valid ~ label {
+        top: -10px;
+        font-size: 12px;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body class="flex items-center justify-center min-h-screen" style="background-image: url('image\'s/hero-anim.gif'); background-position: center; background-repeat: no-repeat ; background-size: cover;">
+    <main class="w-full max-w-md px-4">
+      <div
+        class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-xl"
+      >
+        <form>
+          <h2 class="text-3xl font-bold text-center text-white mb-6">Login</h2>
+
+          <div class="input-box relative mb-6">
+            <span
+              class="absolute left-0 top-1/2 -translate-y-1/2 text-white text-lg"
+            >
+              <ion-icon name="mail"></ion-icon>
+            </span>
+
+            <input
+              type="email"
+              required
+              class="w-full bg-transparent border-b border-white text-white pl-8 py-2 outline-none peer"
+            />
+
+            <label
+              class="absolute left-8 top-2 text-white transition-all duration-300"
+            >
+              Email
+            </label>
+          </div>
+
+          <div class="input-box relative mb-6">
+            <span
+              class="absolute left-0 top-1/2 -translate-y-1/2 text-white text-lg"
+            >
+              <ion-icon name="lock-closed"></ion-icon>
+            </span>
+
+            <input
+              type="password"
+              required
+              class="w-full bg-transparent border-b border-white text-white pl-8 py-2 outline-none peer"
+            />
+
+            <label
+              class="absolute left-8 top-2 text-white transition-all duration-300"
+            >
+              Password
+            </label>
+          </div>
+
+          <div class="flex justify-between text-white text-sm mb-6">
+            <label class="flex items-center gap-2">
+              <input type="checkbox" class="accent-white" />
+              Remember me
+            </label>
+            <a href="#" class="hover:underline">Forgot Password?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-white text-black py-2 rounded-full font-bold hover:bg-gray-200 transition"
+          >
+            Login
+          </button>
+
+          <div class="text-center text-white mt-6 text-sm">
+            Don’t have an account?
+            <a href="#" class="font-bold hover:underline">Register</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

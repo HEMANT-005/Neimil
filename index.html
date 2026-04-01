@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Neimil</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="image's/neimil_black.webp" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-100">
+    <header>
+      <nav
+        id="navbar"
+        class="bg-transparent text-black lg:px-10 fixed w-full z-20 top-0 border-b border-gray-200 transition-all duration-300 z-50 border-bottom border-black"
+      >
+        <div class="max-w-screen flex items-center justify-between mx-auto p-4">
+          <div class="flex items-center order-1">
+            <button
+              data-collapse-toggle="navbar-dropdown"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+            <div
+              id="navbar-dropdown"
+              class="hidden absolute top-full left-0 w-full bg-white shadow-lg lg:static lg:flex lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="flex flex-col lg:flex-row lg:space-x-8 p-4 lg:p-0">
+                <li>
+                  <a
+                    href="#"
+                    class="group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                  >
+                    new
+                  </a>
+                </li>
+                <li>
+                  <a
+                    id="womenTrigger"
+                    href="#"
+                    class="menu-trigger group block uppercase text-[12px] py-2 text-black flex flex-row gap-1 group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                  >
+                    womens
+                    <i
+                      class="bi bi-chevron-down transition-transform duration-300 group-hover:rotate-180"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    id="menTrigger"
+                    href="#"
+                    class="menu-trigger group block uppercase text-[12px] py-2 text-black flex flex-row gap-1 group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                    >men<i
+                      class="bi bi-chevron-down transition-transform duration-300 group-hover:rotate-180"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    id="lifeTrigger"
+                    href="#"
+                    class="menu-trigger group block uppercase text-[12px] py-2 text-black flex flex-row gap-1 group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                    >lifestyle<i
+                      class="bi bi-chevron-down transition-transform duration-300 group-hover:rotate-180"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    id="colTrigger"
+                    href="#"
+                    class="menu-trigger group block uppercase text-[12px] py-2 text-black flex flex-row gap-1 group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+                    >collections<i
+                      class="bi bi-chevron-down transition-transform duration-300 group-hover:rotate-180"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex justify-center order-2">
+            <img
+              src="https://neimil.com/cdn/shop/files/neimil_white.png?v=1771420477&width=300"
+              class="h-10"
+            />
+          </div>
+          <div class="flex items-center gap-4 order-3">
+            <button
+              type="button"
+              class="hidden text-black lg:flex text-sm uppercase group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+            >
+              south africa
+            </button>
+            <i
+              class="bi bi-search text-xl text-black group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+            ></i>
+            <a href="login.html">
+              <i
+                class="bi bi-person text-xl text-black group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+              ></i>
+            </a>
+            <i
+              id="countryBtn"
+              class="bi bi-bag text-xl text-black group text-black block uppercase text-[12px] py-2 hover-underline flex items-center gap-1 relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-black after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+            ></i>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="megaMenu"
+        class="hidden lg:block fixed left-0 top-[70px] w-full h-[600px] bg-white shadow-xl opacity-0 invisible transition-all duration-300 z-10"
+      >
+        <div
+          id="megaContent"
+          class="w-full mx-auto grid grid-cols-3 gap-10 px-20 py-10"
+        ></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="w-full h-[100vh]">
+        <video
+          src="./video's/a626a8b9c8fe406289f53a7920a00d1a.HD-1080p-7.2Mbps-74709220.mp4"
+          autoplay
+          loop
+          muted
+          playinline
+          class="object-cover w-full h-full"
+        ></video>
+      </section>
+      <section class="w-full bg-white">
+        <div class="p-10">
+          <div class="py-6">
+            <div class="flex items-center justify-between flex-wrap gap-4">
+              <div class="w-full lg:w-1/3">
+                <h2 class="text-4xl font-bold uppercase">Pole Pole</h2>
+              </div>
+              <div
+                class="w-full lg:w-1/3 flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6"
+              >
+                <div class="flex items-center gap-2">
+                  <div class="relative inline-block group cursor-pointer">
+                    <span class="text-black"> Shop the Collection </span>
+
+                    <span
+                      class="absolute left-0 -bottom-1 w-full h-[2px] bg-black scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+                    ></span>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-center gap-6">
+                  <div
+                    class="swiper-button-prev !static flex items-center justify-center w-4 h-4 mt-1 text-black z-1"
+                  ></div>
+
+                  <div
+                    class="swiper-button-next !static flex items-center justify-center w-4 h-4 mt-1 text-black z-1"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/1.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/01.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    data-drawer-target="product-drawer"
+                    data-drawer-show="product-drawer"
+                    data-drawer-placement="right"
+                    class="absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500"> RS 1,299.00 </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/2.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/02.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    class="quick-view absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                    data-drawer-target="product-drawer-2"
+                    data-drawer-show="product-drawer-2"
+                    data-drawer-placement="right"
+                    data-title="LUA CO-ORD"
+                    data-price="RS 1,299.00"
+                    data-img1="image's/2.webp"
+                    data-img2="image's/02.webp"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/3.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/3.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    class="quick-view absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                    data-drawer-target="product-drawer-3"
+                    data-drawer-show="product-drawer-3"
+                    data-drawer-placement="right"
+                    data-title="LUA CO-ORD"
+                    data-price="RS 1,299.00"
+                    data-img1="image's/2.webp"
+                    data-img2="image's/02.webp"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/4.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/04.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    class="quick-view absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                    data-drawer-target="product-drawer-4"
+                    data-drawer-show="product-drawer-4"
+                    data-drawer-placement="right"
+                    data-title="LUA CO-ORD"
+                    data-price="RS 1,299.00"
+                    data-img1="image's/2.webp"
+                    data-img2="image's/02.webp"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/5.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/05.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    class="quick-view absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                    data-drawer-target="product-drawer-5"
+                    data-drawer-show="product-drawer-5"
+                    data-drawer-placement="right"
+                    data-title="LUA CO-ORD"
+                    data-price="RS 1,299.00"
+                    data-img1="image's/2.webp"
+                    data-img2="image's/02.webp"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/6.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/06.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    class="quick-view absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                    data-drawer-target="product-drawer-6"
+                    data-drawer-show="product-drawer-6"
+                    data-drawer-placement="right"
+                    data-title="LUA CO-ORD"
+                    data-price="RS 1,299.00"
+                    data-img1="image's/2.webp"
+                    data-img2="image's/02.webp"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/7.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/7.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    class="quick-view absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                    data-drawer-target="product-drawer-7"
+                    data-drawer-show="product-drawer-7"
+                    data-drawer-placement="right"
+                    data-title="LUA CO-ORD"
+                    data-price="RS 1,299.00"
+                    data-img1="image's/2.webp"
+                    data-img2="image's/02.webp"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/8.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/08.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+
+                  <button
+                    class="quick-view absolute bottom-4 right-4 bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-md opacity-0 group-hover:opacity-100 transition duration-300 hover:scale-110"
+                    data-drawer-target="product-drawer-8"
+                    data-drawer-show="product-drawer-8"
+                    data-drawer-placement="right"
+                    data-title="LUA CO-ORD"
+                    data-price="RS 1,299.00"
+                    data-img1="image's/2.webp"
+                    data-img2="image's/02.webp"
+                  >
+                    <i class="bi bi-plus text-xl"></i>
+                  </button>
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <div class="relative">
+            <img src="./image's/s1.webp" alt="s1" class="w-full object-cover" />
+
+            <div class="absolute inset-0 flex items-center justify-center">
+              <h2
+                class="text-2xl sm:text-4xl font-bold text-white text-center px-2"
+              >
+                The Story of <i class="font-normal">Pole Pole</i>
+              </h2>
+            </div>
+          </div>
+
+          <img src="image's/s2.webp" alt="s2" class="w-full object-cover" />
+
+          <img src="image's/s3.webp" alt="s3" class="w-full object-cover" />
+
+          <img src="image's/s4.webp" alt="s4" class="w-full object-cover" />
+        </div>
+      </section>
+      <section class="p-10">
+        <div class="flex flex-row justify-between items-center pb-6">
+          <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-semibold text-black uppercase"
+          >
+            best sellers
+          </h2>
+          <div class="flex flex-row gap-5">
+            <p class="uppercase text-sm font-normal hidden md:block">
+              View all product
+            </p>
+            <div class="flex items-center justify-center gap-6">
+              <div
+                class="swiper-button-prev !static flex items-center justify-center w-4 h-4 mt-1 text-black"
+              ></div>
+
+              <div
+                class="swiper-button-next !static flex items-center justify-center w-4 h-4 mt-1 text-black"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6 pb-6 px-4"
+        >
+          <button
+            data-tab="bags"
+            class="tab-btn uppercase text-xs sm:text-sm px-3 sm:px-4 py-2 hover:bg-gray-200 rounded-full whitespace-nowrap"
+          >
+            bags
+          </button>
+
+          <button
+            data-tab="coats"
+            class="tab-btn uppercase text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full hover:bg-gray-200 whitespace-nowrap"
+          >
+            Coats & jackets
+          </button>
+
+          <button
+            data-tab="dresses"
+            class="tab-btn uppercase text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-full hover:bg-gray-200 whitespace-nowrap"
+          >
+            dresses & skirts
+          </button>
+        </div>
+
+        <div id="bags" class="tab-content block">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/l1.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/l1.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500"> RS 1,299.00 </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/l2.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/l02.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/l3.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/l03.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/l4.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/l04.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/l5.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/l5.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/l6.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/l6.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="coats" class="tab-content hidden">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/j1.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/j11.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500"> RS 1,299.00 </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/j2.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/j22.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/j3.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/j33.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/j4.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/j44.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/j5.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/j55.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/j6.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/j66.jpg"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="dresses" class="tab-content hidden">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/d1.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/d11.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500"> RS 1,299.00 </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/d2.jpg"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/d22.jpg"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/d3.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/d33.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/d4.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/d44.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/d5.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/d55.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="relative w-full aspect-[4/5] group overflow-hidden rounded-lg shadow-lg cursor-pointer h-[360px]"
+                >
+                  <img
+                    src="image's/d6.webp"
+                    class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:opacity-0 group-hover:scale-110"
+                  />
+
+                  <img
+                    src="image's/d66.webp"
+                    class="absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110"
+                  />
+                </div>
+
+                <div class="py-2">
+                  <h3 class="uppercase">lua co-ord</h3>
+                  <span class="text-gray-500">RS 1,299.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-screen h-[50vh] lg:h-full mt-10">
+        <div class="image w-full relative h-full">
+          <img
+            class="w-full h-full object-cover"
+            src="image's/full-bg-2.webp"
+            alt=""
+          />
+          <div
+            class="overlay absolute inset-0 z-9 flex items-center justify-center gap-4 lg:gap-8 flex-col text-center px-4"
+          >
+            <h2
+              class="font-semibold h2x text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight"
+            >
+              Made in Africa. Made to Last.
+            </h2>
+
+            <p
+              class="uppercase ptx text-white text-xs sm:text-sm md:text-base lg:text-lg mt-2 max-w-2xl"
+            >
+              locally produced fashion and homeware celebrating african heritage
+              through modern design
+            </p>
+            <button
+              class="btx_image hover:bg-white hover:text-black transition-all duration-200 border border-white rounded-full uppercase text-white text-sm px-4 py-2"
+            >
+              our story
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-black w-full px-6 py-10">
+      <div class="flex flex-col lg:flex-row gap-10 justify-between">
+        <div class="flex flex-col w-full gap-6">
+          <p class="text-sm uppercase text-white">
+            Be the first to know about new collections and drops.
+          </p>
+          <div class="flex w-full sm:w-80 bg-white">
+            <input
+              type="text"
+              placeholder="Email address"
+              class="w-full p-2 outline-none border-0 text-black"
+            />
+            <button
+              class="px-6 py-2 bg-white hover:bg-gray-200 uppercase text-black text-xs"
+            >
+              subscribe
+            </button>
+          </div>
+          <div class="flex gap-5 text-white text-xl cursor-pointer">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 w-full">
+          <ul>
+            <p class="uppercase text-xs text-gray-400 pb-3">the brand</p>
+            <li class="text-white text-sm uppercase cursor-pointer">about</li>
+            <li class="text-white text-sm uppercase cursor-pointer">values</li>
+            <li class="text-white text-sm uppercase cursor-pointer">contact</li>
+          </ul>
+
+          <ul>
+            <p class="uppercase text-xs text-gray-400 pb-3">legal</p>
+            <li class="text-white text-sm uppercase cursor-pointer">
+              shipping policy
+            </li>
+            <li class="text-white text-sm uppercase cursor-pointer">
+              refund policy
+            </li>
+            <li class="text-white text-sm uppercase cursor-pointer">
+              privacy policy
+            </li>
+          </ul>
+
+          <ul>
+            <p class="uppercase text-xs text-gray-400 pb-3">shop</p>
+            <li class="text-white text-sm uppercase cursor-pointer">womens</li>
+            <li class="text-white text-sm uppercase cursor-pointer">mens</li>
+            <li class="text-white text-sm uppercase cursor-pointer">
+              accessories
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div>
+      <div
+        id="product-drawer"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/1.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/01.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="product-drawer-2"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/2.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/02.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="product-drawer-3"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/3.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/3.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="product-drawer-4"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/4.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/04.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="product-drawer-5"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/5.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/05.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="product-drawer-6"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/6.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/06.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="product-drawer-7"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/7.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/7.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="product-drawer-8"
+        class="fixed top-0 right-0 z-50 h-screen w-full md:w-1/2 bg-gray-100 shadow-xl translate-x-full transition-transform duration-300 overflow-y-auto"
+      >
+        <div class="p-6">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-semibold">Choose options</h2>
+            <button data-drawer-hide="product-drawer" class="text-xl">✕</button>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/8.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+
+            <div class="relative group overflow-hidden rounded-lg">
+              <img
+                src="image's/08.webp"
+                class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+              />
+            </div>
+          </div>
+
+          <h3
+            class="uppercase font-semibold border-b border-black inline-block pb-1"
+          >
+            LUA CO-ORD
+          </h3>
+
+          <p class="mt-2 mb-6">R 2,199.99</p>
+          <div class="mb-8">
+            <p class="text-sm tracking-widest mb-3">
+              SIZE <span id="selectedSize" class="font-semibold">S</span>
+            </p>
+
+            <div class="flex gap-2" id="sizeContainer">
+              <button class="size-btn border border-black px-3 py-2 text-sm">
+                S
+              </button>
+              <button class="size-btn border px-3 py-2 text-sm">M</button>
+              <button class="size-btn border px-3 py-2 text-sm">L</button>
+              <button class="size-btn border px-3 py-2 text-sm">XL</button>
+              <button class="size-btn border px-3 py-2 text-sm">2XL</button>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-4">
+            <button
+              class="bg-black text-white py-4 rounded-full text-sm tracking-widest"
+            >
+              ADD TO CART
+            </button>
+
+            <button
+              class="border border-black py-4 rounded-full text-sm tracking-widest"
+            >
+              BUY IT NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
